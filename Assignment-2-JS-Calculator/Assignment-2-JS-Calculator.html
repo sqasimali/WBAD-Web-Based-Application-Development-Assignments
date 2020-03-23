@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!--  Developer: Syed Qasim Ali Shah
+      Email: syedqasimali311@gmail.com
+      Github: https://github.com/sqasimali -->
+
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="Assignment-2-JS-Calculator.css">
+  </head>
+  <body>
+    <div id="panel">
+      <div id="main">
+        <form name="form">
+          <input class="textview" name="textview" id="display" value="0">
+        </form>
+        <input type="button" class="toprow" value="+" style="border-left-width: 0px;" onclick="insert('+')">
+        <input type="button" class="toprow" value="-" onclick="insert('-')">
+        <input type="button" class="toprow" value="x" onclick="insert('*')">
+        <input type="button" class="toprow" value="/" style="border-right-width: 0px;" onclick="insert('/')">
+        <input type="button" class="numeric" value="7" style="border-left-width: 0px;" onclick="insert(7)">
+        <input type="button" class="numeric" value="8" onclick="insert(8)">
+        <input type="button" class="numeric" value="9" onclick="insert(9)">
+        <input type="button" class="toprow" value="AC" style="border-right-width: 0px;" onclick="erase()">
+        <input type="button" id="equal" value="=" style="border-bottom-width: 0px; border-right-width: 0px; border-radius: 0px 0px 20px 0px;" onclick="equal()">
+        <input type="button" class="numeric" value="4" style="border-left-width: 0px;" onclick="insert(4)">
+        <input type="button" class="numeric" value="5" onclick="insert(5)">
+        <input type="button" class="numeric" value="6" onclick="insert(6)">
+        <input type="button" class="numeric" value="1" style="border-left-width: 0px;" onclick="insert(1)">
+        <input type="button" class="numeric" value="2" onclick="insert(2)">
+        <input type="button" class="numeric" value="3" onclick="insert(3)">
+        <input type="button" class="numeric" value="0" style="border-bottom-width: 0px; border-left-width: 0px; border-radius: 0px 0px 0px 20px;" onclick="insert(0)">
+        <input type="button" class="numeric" value="." style="border-bottom-width: 0px;" onclick="insert('.')">
+        <input type="button" class="numeric" value="C" style="border-bottom-width: 0px;" onclick="backspace()">
+      </div>
+    </div>
+    <script src="Assignment-2-JS-Calculator.js"></script>
+  </body>
+</html>
